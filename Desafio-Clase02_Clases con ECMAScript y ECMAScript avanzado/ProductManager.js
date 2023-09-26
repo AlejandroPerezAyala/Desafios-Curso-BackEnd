@@ -8,11 +8,7 @@ class ProductManager {
     validateCode = (code) => {
         const productos = this.products
 
-        if(productos.find((producto) => producto.code == code)){
-            return true
-        } else {
-            return false
-        }
+        return productos.some((producto) => producto.code == code)
     }
 
     //muestro los priductos
@@ -70,8 +66,8 @@ productManager.getProducts()
 productManager.getAddProducts("producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25)
 productManager.getProducts()
 productManager.getAddProducts("producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25)
-productManager.getAddProducts("producto prueba", "", 200, "Sin imagen", "abc124", 25)
-productManager.getAddProducts("producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc124", 25)
-productManager.getProducts()
-productManager.getProductById(2)
-productManager.getProductById(4)
+// productManager.getAddProducts("producto prueba", "", 200, "Sin imagen", "abc124", 25)
+// productManager.getAddProducts("producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc124", 25)
+// productManager.getProducts()
+// productManager.getProductById(2)
+// productManager.getProductById(4)
