@@ -9,6 +9,8 @@ class ProductManager {
         const productos = this.products
 
         return productos.some((producto) => producto.code == code)
+
+
     }
 
     //muestro los priductos
