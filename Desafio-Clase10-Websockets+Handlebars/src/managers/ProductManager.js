@@ -143,7 +143,8 @@ export default class ProductManager {
             const productos = this.products.filter(product => product.id !== id)
 
             await fs.promises.writeFile(this.path, JSON.stringify(productos,null,'\t'))
-            return "Se elimino el producto correctamente"
+            return {status:"Se elimino el producto correctamente",
+                    res: productos}
         } catch (err) {
             return err
         }

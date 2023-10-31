@@ -16,14 +16,5 @@
 		"thumbnail": "http://localhost:8080/static/images/rottweiler.jpg",
 		"code": "abc143",
 		"stock": "10"
-	},
-	{
-		"id": 3,
-		"title": "asdasdasd",
-		"description": "asdasdad",
-		"price": "asdasdads",
-		"thumbnail": "http://localhost:8080/static/images/goldenretriever.jpg",
-		"code": "asdasdasdasd",
-		"stock": "asdasdasd"
 	}
 ]
